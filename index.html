@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinod Chavan | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="pre-inner">
+      <h2 class="pre-logo">Vinod Chavan</h2>
+      <div class="pre-track">
+        <div class="pre-fill" id="preFill"></div>
+      </div>
+      <p class="pre-pct" id="prePct">0%</p>
+    </div>
+  </div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor-dot"    id="cursorDot"></div>
+  <div class="cursor-circle" id="cursorCircle"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Vinod<span>.</span></a>
+
+      <nav id="navMenu">
+        <a href="#home"     class="nav-link active">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#skills"   class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="hire-btn">Hire Me</a>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero-section">
+    <canvas id="canvas"></canvas>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="hero-glow g3"></div>
+
+    <div class="hero-container">
+
+      <!-- Left Text -->
+      <div class="hero-left">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Available for work
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm<br>
+          <span class="name-colored">Vinod Chavan</span>
+        </h1>
+
+        <div class="hero-role">
+          <span>I am a&nbsp;</span>
+          <span id="typedText" class="typed"></span>
+          <span class="type-cur">|</span>
+        </div>
+
+        <p class="hero-desc">
+          BCA Student &amp; Full Stack Developer from Jalna, Maharashtra.
+          Building powerful web apps with Java, JSP, Servlet &amp; Oracle XE.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact"  class="btn-outline">Contact Me   <i class="fas fa-paper-plane"></i></a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="10">0</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Years Learning</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="8">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="hero-right">
+        <div class="photo-wrapper">
+          <div class="spin-ring ring-outer"></div>
+          <div class="spin-ring ring-inner"></div>
+          <div class="photo-circle">
+            <img src="./WhatsApp Image 2026-03-17 at 9.06.03 AM.jpeg" alt="Vinod Chavan"
+                 onerror="this.style.display='none';
+                          document.getElementById('photoText').style.display='flex'" />
+            <div id="photoText" class="photo-text">VD</div>
+          </div>
+          <div class="floating-tag tag1"><i class="fab fa-java"></i> Java</div>
+          <div class="floating-tag tag2"><i class="fas fa-database"></i> Oracle</div>
+          <div class="floating-tag tag3"><i class="fas fa-code"></i> JSP</div>
+          <div class="floating-tag tag4"><i class="fas fa-server"></i> Tomcat</div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#about" class="scroll-down">
+      <div class="scroll-box">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-img-box reveal">
+          <div class="about-photo-frame">
+            <img src="./Image.jpg" alt="Vinod"
+                 onerror="this.style.display='none';
+                          document.getElementById('aboutText').style.display='flex'" />
+            <div id="aboutText" class="about-photo-text">VD</div>
+          </div>
+          <div class="about-exp-box">
+            <strong>BCA</strong>
+            <small>2025 – 26</small>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h3>Full Stack Developer &amp; <em>UI/UX Enthusiast</em></h3>
+          <p>I'm a BCA student at <strong>Badrinarayan Barwale Mahavidyalaya, Jalna, Maharashtra</strong> with a passion for building real-world web applications.</p>
+          <p>I specialise in <strong>Java Servlets, JSP, Oracle XE, JDBC, and Apache Tomcat</strong>. I have built multiple full-stack projects including SecureBank (banking system), VeloRent (car rental platform), Dairy Management System, and Online Electronic Store.</p>
+          <p>I love solving problems through clean, functional code and continuously learning new technologies.</p>
+
+          <div class="about-info-grid">
+            <div class="info-box">
+              <i class="fas fa-user-graduate"></i>
+              <div>
+                <strong>Degree</strong>
+                <span>BCA (2025–26)</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-university"></i>
+              <div>
+                <strong>College</strong>
+                <span>BBM, Jalna</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Jalna, Maharashtra</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <span>vinodchavan9518@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary">
+            Get In Touch <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="skills-section">
+    <div class="section-container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#f97316,#ef4444)">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h4>HTML5</h4>
+          <p>Semantic markup &amp; structure</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="92"></div>
+          </div>
+          <span class="skill-percent">92%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#3b82f6,#1d4ed8)">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h4>CSS3</h4>
+          <p>Animations &amp; responsive layouts</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#eab308,#f59e0b)">
+            <i class="fab fa-js"></i>
+          </div>
+          <h4>JavaScript</h4>
+          <p>DOM &amp; interactive UIs</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="78"></div>
+          </div>
+          <span class="skill-percent">78%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#ef4444,#b91c1c)">
+            <i class="fab fa-java"></i>
+          </div>
+          <h4>Java</h4>
+          <p>OOP &amp; backend development</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#8b5cf6,#6d28d9)">
+            <i class="fas fa-code"></i>
+          </div>
+          <h4>JSP / Servlet</h4>
+          <p>Server-side rendering &amp; MVC</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="82"></div>
+          </div>
+          <span class="skill-percent">82%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#06b6d4,#0891b2)">
+            <i class="fas fa-database"></i>
+          </div>
+          <h4>Oracle XE</h4>
+          <p>Database design &amp; SQL</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="80"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#10b981,#059669)">
+            <i class="fab fa-bootstrap"></i>
+          </div>
+          <h4>Bootstrap</h4>
+          <p>Responsive UI framework</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="80"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon" style="background: linear-gradient(135deg,#f43f5e,#be123c)">
+            <i class="fab fa-github"></i>
+          </div>
+          <h4>Git &amp; GitHub</h4>
+          <p>Version control &amp; collaboration</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="72"></div>
+          </div>
+          <span class="skill-percent">72%</span>
+        </div>
+
+      </div>
+
+      <!-- Tech badges -->
+      <div class="tech-badges reveal">
+        <span class="badge">Apache Tomcat</span>
+        <span class="badge">JDBC</span>
+        <span class="badge">MVC Pattern</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">JSTL</span>
+        <span class="badge">DAO Pattern</span>
+        <span class="badge">NetBeans IDE</span>
+        <span class="badge">VS Code</span>
+        <span class="badge">Netlify</span>
+        <span class="badge">SQL Developer</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="projects-section">
+    <div class="section-container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-banner" style="--c1:#1565C1; --c2:#0d47a1;">
+            <i class="fas fa-university project-ico"></i>
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Java</span><span>JSP</span><span>Oracle XE</span><span>Servlet</span>
+            </div>
+            <h3>SecureBank — Banking System</h3>
+            <p>Full-featured banking system with login, dashboard (₹72,000 balance, Account: SB3668669482), send money, transaction history (SUCCESS status), loan application &amp; admin panel. URL: localhost:8086/BankManage/</p>
+            <ul class="project-features">
+              <li><i class="fas fa-check-circle"></i> User login &amp; registration</li>
+              <li><i class="fas fa-check-circle"></i> Send Money &amp; Transactions</li>
+              <li><i class="fas fa-check-circle"></i> Apply Loan — 4 types</li>
+              <li><i class="fas fa-check-circle"></i> Admin Panel</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-btn">View Details <i class="fas fa-arrow-right"></i></a>
+              <a href="#" class="project-btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-banner" style="--c1:#e55a00; --c2:#b71c1c;">
+            <i class="fas fa-car project-ico"></i>
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Java</span><span>JSP</span><span>Oracle XE</span><span>MVC</span>
+            </div>
+            <h3>VeloRent — Car Rental System</h3>
+            <p>Complete car rental platform with user register, login, car browsing, booking system, and contact form. Dark fire-orange UI deployed on Netlify.</p>
+            <ul class="project-features">
+              <li><i class="fas fa-check-circle"></i> Register &amp; Login</li>
+              <li><i class="fas fa-check-circle"></i> Car listing &amp; booking</li>
+              <li><i class="fas fa-check-circle"></i> Contact form with DB</li>
+              <li><i class="fas fa-check-circle"></i> Oracle XE — 4 tables</li>
+            </ul>
+            <div class="project-links">
+              <a href="" target="_blank" class="project-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-banner" style="--c1:#15803d; --c2:#065f46;">
+            <i class="fas fa-cow project-ico"></i>
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Java</span><span>Servlet</span><span>Oracle</span><span>JSP</span>
+            </div>
+            <h3>Dairy Management System</h3>
+            <p>Dairy farm management with farmer records, milk entry, rate management, feed tracking, bill generation &amp; admin login. Green-themed sidebar navigation.</p>
+            <ul class="project-features">
+              <li><i class="fas fa-check-circle"></i> Farmer &amp; milk tracking</li>
+              <li><i class="fas fa-check-circle"></i> Rate &amp; feed management</li>
+              <li><i class="fas fa-check-circle"></i> Bill generation</li>
+              <li><i class="fas fa-check-circle"></i> Oracle XE — 6 tables</li>
+            </ul>
+            <div class="project-links">
+              <a href="" class="project-btn">View Details <i class="fas fa-arrow-right"></i></a>
+              <a href="#" class="project-btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-banner" style="--c1:#7c3aed; --c2:#4c1d95;">
+            <i class="fas fa-laptop project-ico"></i>
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Java</span><span>JSP</span><span>Oracle</span><span>JDBC</span>
+            </div>
+            <h3>Online Electronic Store</h3>
+            <p>E-commerce platform for electronics — customer login, product catalog (Samsung ₹20,000, Apple ₹30,000, OnePlus ₹50,000, Sony ₹70,000), buy &amp; order confirmation.</p>
+            <ul class="project-features">
+              <li><i class="fas fa-check-circle"></i> Product catalog &amp; buy</li>
+              <li><i class="fas fa-check-circle"></i> Customer login</li>
+              <li><i class="fas fa-check-circle"></i> Order confirmation</li>
+              <li><i class="fas fa-check-circle"></i> Oracle XE — 3 tables</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-btn">View Details <i class="fas fa-arrow-right"></i></a>
+              <a href="#" class="project-btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal">
+          <div class="project-banner" style="--c1:#0891b2; --c2:#0e7490;">
+            <i class="fas fa-globe project-ico"></i>
+            <span class="project-number">05</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>Modern responsive developer portfolio with smooth animations, typed effect, particle background, scroll reveal, skill bars, project cards &amp; contact form. Live on Netlify.</p>
+            <ul class="project-features">
+              <li><i class="fas fa-check-circle"></i> Smooth animations</li>
+              <li><i class="fas fa-check-circle"></i> Fully responsive</li>
+              <li><i class="fas fa-check-circle"></i> Projects &amp; skills section</li>
+              <li><i class="fas fa-check-circle"></i> Deployed on Netlify</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://vinodchavan.netlify.app" target="_blank" class="project-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal">
+          <div class="project-banner" style="--c1:#d97706; --c2:#92400e;">
+            <i class="fas fa-file-code project-ico"></i>
+            <span class="project-number">06</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>JSP</span><span>JSTL</span><span>Servlet</span><span>Java</span>
+            </div>
+            <h3>JSP Practicals — 10 Programs</h3>
+            <p>All 10 JSP programs: Scriplet, Expression, Declarative tags; implicit objects (out, request, response, session); directive tags, action tags, JSTL Core, SQL &amp; Function library.</p>
+            <ul class="project-features">
+              <li><i class="fas fa-check-circle"></i> All JSP tag types</li>
+              <li><i class="fas fa-check-circle"></i> All implicit objects</li>
+              <li><i class="fas fa-check-circle"></i> JSTL Core &amp; SQL tags</li>
+              <li><i class="fas fa-check-circle"></i> Function tag library</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-btn">View Details <i class="fas fa-arrow-right"></i></a>
+              <a href="#" class="project-btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h3>Let's <span>Work Together</span></h3>
+          <p>Open for freelance projects, internships, and collaborations. Feel free to reach out anytime!</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>vinodchavan9518@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Location</strong>
+                <span>Jalna, Maharashtra, India</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <strong>College</strong>
+                <span>Badrinarayan Barwale Mahavidyalaya, Jalna</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="inputName">Your Name</label>
+              <input type="text" id="inputName" name="name"
+                     placeholder="Vinod Chavan" required />
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email Address</label>
+              <input type="email" id="inputEmail" name="email"
+                     placeholder="email@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputSubject">Subject</label>
+            <input type="text" id="inputSubject" name="subject"
+                   placeholder="Project Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea id="inputMessage" name="message" rows="5"
+                      placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-block">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success-msg" id="successMsg">
+            <i class="fas fa-check-circle"></i>
+            Message sent successfully! I'll get back to you soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">Vinod<span>.</span></div>
+      <p class="footer-text">Designed &amp; Built by <strong>Vinod Chavan</strong> &copy; 2025–2026</p>
+      <p class="footer-sub">BCA Student &middot; Badrinarayan Barwale Mahavidyalaya, Jalna, Maharashtra</p>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Load JS at bottom -->
+  <script src="script.js"></script>
+
+</body>
+</html>
